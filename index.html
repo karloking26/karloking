@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	     <select id="opt">
+	     	<option>Addition</option>
+	     	<option>Substraction</option>
+	     	<option>Multiplication</option>
+	     	<option>Division</option>
+	     </select><br/>
+	     
+	     <input type="text" id = "num1"><br>
+	     <input type="text" id = "num2"><br>
+	     <button id="btn" onclick="total()">Click</button></body></html><br/>
+	     <h1 id="tot"></h1>
+</body>
+</html>
+<script type="text/javascript">
+     function total() {
+     	var num1 = parseFloat(document.getElementById('num1').value);
+     	var num2 = parseFloat(document.getElementById('num2').value);
+     	var opt = document.getElementById('opt').value;
+     	if (opt == "Addition") {
+     		var gtotal = (num1 + num2);
+     		var tot = document.getElementById("tot");
+     		tot.innerHTML = gtotal;
+     	}if (opt == "Substraction") {
+     		var gtotal = (num1 - num2);
+     		var tot = document.getElementById("tot");
+     		tot.innerHTML = gtotal;
+     	}if (opt == "Multiplication") {
+     		var gtotal = (num1 * num2);
+     		var tot = document.getElementById("tot");
+     		tot.innerHTML = gtotal;
+     	}if (opt == "Division") {
+     		var gtotal = (num1 / num2);
+     		var tot = document.getElementById("tot");
+     		tot.innerHTML = gtotal;
+     	}
+     }
+     	</script>
